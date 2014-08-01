@@ -1,8 +1,7 @@
 (ns chord-transit.format
   (:require [chord.format :refer [wrap-format try-read]]
-            [clojure.core.async :as a]
-            [cognitect.transit :as t])
-  (:import [java.io ByteArrayInputStream ByteArrayOutputStream]))
+            [cljs.core.async :as a]
+            [cognitect.transit :as t]))
 
 (defmethod chord.format/wrap-format :transit
   [{:keys [read-ch write-ch]} _]
