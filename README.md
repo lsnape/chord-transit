@@ -59,7 +59,8 @@ And then use the `wrap-websocket-handler` as follows:
 
 ## Caveats
 
-Reading and writing of custom types is currently not supported.
+* Reading and writing of custom types is currently not supported.
+* Transit is still very new and still subject to change! See notices on the Cognitect site for latest information.
 
 ## A Big Thanks
 
