@@ -9,5 +9,5 @@
   (let [reader (t/reader :json)
         writer (t/writer :json)]
     
-    {:read-ch (a/map< #(t/read reader %) read-ch)
+    {:read-ch (a/map< #(t/read reader (:message %)) read-ch)
      :write-ch (a/map< #(t/write writer %) write-ch)}))
