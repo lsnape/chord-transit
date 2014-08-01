@@ -61,3 +61,7 @@ And then use the `wrap-websocket-handler` as follows:
 
 Reading and writing of custom types is currently not supported.
 
+## A Big Thanks
+
+* [Jeff Rose](https://github.com/rosejn), implementer of the [chord-fressian](https://github.com/thinktopic/chord-fressian) library, which I heavily referred to
+* [James Henderson](https://github.com/james-henderson), for guidance whilst writing this library
