@@ -44,7 +44,7 @@ And then use the `wrap-websocket-handler` as follows:
 	(wrap-websocket-handler {:format :transit)
 ```
 
-### Clojurescript client
+### ClojureScript client
 
 ```clojure
 (:require [chord.client :refer [ws-ch]]
