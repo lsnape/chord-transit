@@ -16,7 +16,7 @@
   (let [reader (t/reader (ByteArrayInputStream. (.getBytes string)) :json)]
     (t/read reader)))
 
-(defmethod chord.format/wrap-format :t
+(defmethod chord.format/wrap-format :transit
   [{:keys [read-ch write-ch]} _]
   (let [output-stream (ByteArrayOutputStream.)
         writer (t/writer output-stream :json)]
