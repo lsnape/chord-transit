@@ -12,9 +12,9 @@
     (.reset output-stream)
     string))
 
-(defn string->msg [string]
-  (let [reader (t/reader (ByteArrayInputStream. (.getBytes string)) :json)]
-    (t/read reader)))
+(defn string->msg [{:keys [message]}]
+  (let [reader (t/reader (ByteArrayInputStream. (.getBytes message)) :json)]
+    {:message (t/read reader)}))
 
 (defmethod chord.format/wrap-format :transit
   [{:keys [read-ch write-ch]} _]
