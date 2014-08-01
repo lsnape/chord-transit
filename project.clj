@@ -1,4 +1,4 @@
-(defproject lsnape/chord-transit "0.1.0-SNAPSHOT"
+(defproject lsnape/chord-transit "0.1.0"
   :description "Adds Transit support as a communication format for the Chord library."
   :url "https://github.com/lsnape/chord-transit"
   :license {:name "Eclipse Public License"
